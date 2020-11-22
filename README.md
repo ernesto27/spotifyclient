@@ -9,9 +9,6 @@ https://en.wikipedia.org/wiki/AppleScript
 In the future will be implemented on Linux also
 
 
-In the future will be implemented on Linux also
-
-
 ## Instalation
 ```
 $ go get github.com/ernesto27/spotifyclient
