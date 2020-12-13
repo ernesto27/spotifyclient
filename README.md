@@ -2,11 +2,7 @@
 
 Go package that obtaint metadata about the current playing song and status on your desktop app Spotify app, also manipulate player options ( play/pause, volume , etc)
 
-At the moment is support only the macOS operating system ,  this package uses the appleScript spotify commands to works.
-
-https://en.wikipedia.org/wiki/AppleScript
-
-In the future will be implemented on Linux also
+Works on Linux and MacOS .
 
 
 ## Instalation
