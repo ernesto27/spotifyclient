@@ -1,3 +1,5 @@
+// +build darwin
+
 package spotifyclient
 
 import (
@@ -19,9 +21,8 @@ type SpotifyMetadata struct {
 	TrackNumber int      `json:"track_number"`
 	Popularity  int      `json:"popularity"`
 	ID          string   `json:"id"`
-	AlbumArtist string   `json:"album_artist"`
-	ArtworlURL  string   `json:"artwork_url"`
-	SpotifyURL  string   `json:"spotify_url"`
+	ArtworkURL  string   `json:"artwork_url"`
+	URL         string   `json:"spotify_url"`
 }
 
 // State of Spotify app

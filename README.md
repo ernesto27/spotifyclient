@@ -2,11 +2,7 @@
 
 Go package that obtaint metadata about the current playing song and status on your desktop app Spotify app, also manipulate player options ( play/pause, volume , etc)
 
-At the moment is support only the macOS operating system ,  this package uses the appleScript spotify commands to works.
-
-https://en.wikipedia.org/wiki/AppleScript
-
-In the future will be implemented on Linux also
+Works on Linux and MacOS .
 
 
 ## Instalation
@@ -35,15 +31,8 @@ func main() {
 		log.Fatalf("failed getting metadata, err: %s", err.Error())
 	}
 
-	v := reflect.ValueOf(meta)
-	typeOfS := v.Type()
-
-	for i := 0; i < v.NumField(); i++ {
-		fmt.Printf("Field: %s\tValue: %v\n", typeOfS.Field(i).Name, v.Field(i).Interface())
-    }
-
     // Print artist name
-    fmt.Println(meta.ArtistName[])
+    fmt.Println(meta.ArtistName[0])
     
     // RESPONSE
     /*
@@ -56,9 +45,8 @@ func main() {
     Field: TrackNumber	Value: 1
     Field: Popularity	Value: 77
     Field: ID	Value: spotify:track:3MrRksHupTVEQ7YbA0FsZK
-    Field: AlbumArtist	Value: Europe
-    Field: ArtworlURL	Value: https://i.scdn.co/image/ab67616d0000b2732d925cec3072ed1b74e5188f
-    Field: SpotifyURL	Value: spotify:track:3MrRksHupTVEQ7YbA0FsZK
+    Field: ArtworkURL	Value: https://i.scdn.co/image/ab67616d0000b2732d925cec3072ed1b74e5188f
+    Field: URL	Value: spotify:track:3MrRksHupTVEQ7YbA0FsZK
     */
 
 ```
